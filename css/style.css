@@ -1,0 +1,288 @@
+:root{
+    --title-size: 1.5rem;
+}
+
+::placeholder{
+    color: #e7e7e7;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    padding: 4.1875rem 20%;
+}
+
+h1, h2, h3{
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 1rem;   
+}
+
+h1{
+    color: #444;
+    font-size: var(--title-size);
+}
+
+h2{
+    font-size: calc(var(--title-size) - 0.4rem);
+}
+
+h3{
+    font-size: calc(var(--title-size) - (0.4rem * 2));
+}
+
+p, a, button, span, div{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;    
+}
+
+p{
+    color: #999;
+    font-style: normal;
+    line-height: 26px;
+}
+
+a{
+    color: #444;
+}
+
+.cards{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__picture{
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.cards__card{
+    margin: 0;
+    padding: 0;
+    flex: 0 0 30%;
+    min-height: 28.75rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12.375rem;
+    /* box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%); */
+}
+
+.card__title{
+    color: #444;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.profile__picture{
+    margin-bottom: 1rem;
+}
+
+.profile__description{
+    margin-bottom: 1rem;
+}
+
+.profile__link{
+    margin-bottom: 7.9375rem;
+    display: block;
+}
+
+.card__description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.card__main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.gallery__cards{
+    list-style: none;
+    margin: 0;
+    margin-bottom: 8rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gallery__card{
+    margin: 0;
+    padding: 0;
+    flex: 0 0 32%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.gallery__picture{
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.modal{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.modal__banner{
+    width: 80vw;
+    margin: auto;
+    display: block;
+}
+
+.experience{
+    margin-bottom: 6.375rem;
+}
+.experience__title{
+    line-height: 1.82875rem;
+    margin-bottom: 1.4375rem;
+}
+
+.experience__cards{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 4.125rem;
+}
+
+.experience__card{
+    flex: 0 0 28%;
+}
+
+.experience__company, .experience__job-name, .experience__date{
+    line-height: 1.6rem;
+}
+
+.experience__company, .experience__job-name{
+    font-size: 1rem;
+}
+
+.experience__job-name, .experience__date{
+    font-weight: 400;
+}
+.experience__company{
+    color: #666;
+    font-weight: 500;
+}
+/* .experience__job-name{
+
+} */
+.experience__date{
+    font-size: 0.875rem;
+}
+
+.contact{
+    background-color: #f9f9f9;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+}
+
+.contact__field, .contact__sub-title, .contact__form{
+    margin-bottom: 1.5rem;
+}
+.contact__field, .contact__sub-title, .contact__form, .contact__title, .contact__text-area{
+    border-radius: 0.25rem;
+}
+.contact__title{
+    margin-bottom: 0.5rem;
+
+}
+/* .contact__sub-title{
+    
+}
+.contact__form{
+
+} */
+.contact__field{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__field--itens-right{
+    align-items: flex-end;
+}
+
+.contact__label{
+    margin-bottom: 0.25rem;
+}
+.contact__input{
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    border: 0.0625rem solid #E7E7E7;
+    box-sizing: border-box;     
+}
+.contact__text-area{
+    padding: 0.5rem;
+    border: 0.0625rem solid #E7E7E7;
+    box-sizing: border-box; 
+}
+
+.contact__link{
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 1rem;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .profile__description{
+        text-align: justify;
+    }
+
+    .cards__card{
+        flex: 0 0 100%;
+        margin-bottom: 5rem;
+    }
+
+    .gallery__card{
+        flex: 0 0 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+
+    .experience__cards{
+        gap: 0;
+        text-align: center;
+    }
+
+    .experience__card{
+        flex: 0 0 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+}

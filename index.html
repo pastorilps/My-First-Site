@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="profile">
+        <!-- .profile__ -->
+        <img src="assets/profile_picture.png" alt="profile__picture" class="profile__picture">
+        <h1 class="profile__title">Welcome to my Portfolio 👋</h1>
+
+        <p class="profile__description">I’m Mete. I’m 24-year-old. I’m a Digital Product Designer who prioritizes
+            simplicity and usability. Currently, I'm Digital Product Designer on Norma. Formerly Enrich Mobile, ASDC,
+            TalentMondo, and MobileUpp. I love working on side projects, trying to improve myself on SwiftUI and
+            Webflow.</p>
+        <a href="#contact" class="profile__link">
+            Contact-me
+        </a>
+    </header>
+    <ul class="cards">
+        <!-- .cards__ -->
+        <!-- .card__ -->
+        <li class="cards__card card">
+            <img src="assets/card_1.jpg" alt="" class="card__picture">
+            <h3 class="card__title">Businesswise</h3>
+            <div class="card__main">
+                <p class="card__description">Businesswise freelance was a project where I worked as a designer. The main
+                    goal of businesswise is to gather podcasts in various categories for professional people.</p>
+                <a href="http://wwww.google.com.br" class="card__link">See All</a>
+            </div>
+        </li>
+        <li class="cards__card card">
+            <img src="assets/card_2.jpg" alt="" class="card__picture">
+            <h3 class="card__title">Simple Scanner</h3>
+            <div class="card__main">
+                <p class="card__description">Simple Scanner is an application that we developed when I was working at
+                    Enrich mobile. With Simple scanner, you can scan your documents and convert them to PDF</p>
+                <a href="http://wwww.google.com.br" class="card__link">Coming Soon</a>
+            </div>
+        </li>
+        <li class="cards__card card">
+            <img src="assets/card_3.jpg" alt="" class="card__picture">
+            <h3 class="card__title">Musix</h3>
+            <div class="card__main">
+                <p class="card__description">Musix is a side project I prepared in my spare time. Spotify and Apple
+                    Music competitors. The biggest advantage compared to its competitors is that it provides higher
+                    sound quality.</p>
+                <a href="http://wwww.google.com.br" class="card__link">See All</a>
+            </div>
+        </li>
+    </ul>
+
+    <section class="gallery">
+        <h1 class="gallery__title">Some concept works</h1>
+
+        <ul class="gallery__cards">
+            <li class="gallery__card" onclick="showModal(this)">
+                <img class="gallery__picture" src="assets/gallery_card1.jpg" alt="">
+            </li>
+            <li class="gallery__card" onclick="showModal(this)">
+                <img class="gallery__picture" src="assets/gallery_card2.jpg" alt="">
+            </li>
+            <li class="gallery__card" onclick="showModal(this)">
+                <img class="gallery__picture" src="assets/gallery_card3.jpg" alt="">
+            </li>
+            <li class="gallery__card" onclick="showModal(this)">
+                <img class="gallery__picture" src="assets/gallery_card4.jpg" alt="">
+            </li>
+            <li class="gallery__card" onclick="showModal(this)">
+                <img class="gallery__picture" src="assets/gallery_card5.jpg" alt="">
+            </li>
+            <li class="gallery__card" onclick="showModal(this)">
+                <img class="gallery__picture" src="assets/gallery_card6.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <!-- .experience__ -->
+        <h1 class="experience__title">Experience</h1>
+        <div class="experience__cards">
+            <div class="experience__card">
+                <p class="experience__company">Norma</p>
+                <p class="experience__job-name">Digital Product Designer</p>
+                <p class="experience__date">Mar 21 — Now</p>
+            </div>
+            <div class="experience__card">
+                <p class="experience__company">Enrich Mobile</p>
+                <p class="experience__job-name">UI Designer</p>
+                <p class="experience__date">Apr 2020 — Mar 21</p>
+            </div>
+            <div class="experience__card">
+                <p class="experience__company">Norma</p>
+                <p class="experience__job-name">Digital Product Designer</p>
+                <p class="experience__date">Mar 21 — Now</p>
+            </div>
+            <div class="experience__card">
+                <p class="experience__company">Norma</p>
+                <p class="experience__job-name">Digital Product Designer</p>
+                <p class="experience__date">Mar 21 — Now</p>
+            </div>
+            <div class="experience__card">
+                <p class="experience__company">Enrich Mobile</p>
+                <p class="experience__job-name">UI Designer</p>
+                <p class="experience__date">Apr 2020 — Mar 21</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <!-- .contact__ -->
+        <h1 class="contact__title">Looking for help with design</h1>
+        <p class="contact__sub-title">Send me details</p>
+        <form class="contact__form">
+            <div class="contact__field">
+                <label for="name" class="contact__label">Name</label>
+                <input required type="text" class="contact__input" id="name" placeholder="Enter your name">
+            </div>
+            <div class="contact__field">
+                <label for="email" class="contact__label">Email Address</label>
+                <input required type="email" class="contact__input" id="email" placeholder="Enter your email">
+            </div>
+            <div class="contact__field">
+                <label for="textarea" class="contact__label">Detail</label>
+                <textarea required id="textarea" cols="30" rows="5" class="contact__text-area" placeholder="Enter your message"></textarea> 
+            </div>
+            <div class="contact__field contact__field--itens-right">
+                <button class="contact__link" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="modal" onclick="closeModal()">
+        <img alt="" class="modal__banner">
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>
