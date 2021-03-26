@@ -284,5 +284,9 @@ a{
         flex: 0 0 100%;
         margin-bottom: 1.5rem;
     }
+
+    .modal__banner{
+        width: 80vw;
+    }
     
 }
