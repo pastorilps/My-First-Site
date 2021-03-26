@@ -78,7 +78,6 @@ a{
     display: flex;
     flex-direction: column;
     margin-bottom: 12.375rem;
-    /* box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%); */
 }
 
 .card__title{
@@ -249,6 +248,12 @@ a{
     background-color: transparent;
     border: none;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 1366px) {
+    .experience__cards{
+        gap: 3rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
